@@ -5,7 +5,7 @@
 
 	<test name=" Maven Class One">
 		<classes>
-			<class name="SeleniumMaven.MavenDemo.MavenReview" />
+			<class name="SeleniumMaven.MavenDemo.MaveTest" />
 		</classes>
 	</test> <!-- Test -->
 
