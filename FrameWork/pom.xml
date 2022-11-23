@@ -4,11 +4,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>SeleniumMaven</groupId>
-  <artifactId>MavenDemo</artifactId>
+  <groupId>NewMavenDemo</groupId>
+  <artifactId>FrameWork</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>MavenDemo</name>
+  <name>FrameWork</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -17,6 +17,7 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
+
 
 	<profiles>
 	<profile>
@@ -72,8 +73,8 @@
 
 	</profiles>
 
-	<dependencies>
-		<dependency>
+  <dependencies>
+   <dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>4.6.0</version>
@@ -85,11 +86,11 @@
 			<version>7.6.1</version>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+  </dependencies>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
-      <plugins>			
+      <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>

@@ -1,4 +1,4 @@
-package SeleniumMaven.MavenDemo;
+package NewMavenDemo.FrameWork;
 
 /**
  * Hello world!

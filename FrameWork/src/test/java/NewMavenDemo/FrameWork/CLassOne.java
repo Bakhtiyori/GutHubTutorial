@@ -1,4 +1,4 @@
-package SeleniumMaven.MavenDemo;
+package NewMavenDemo.FrameWork;
 
 import java.util.List;
 
@@ -7,11 +7,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
-public class MaveTest {
+public class CLassOne {
+	
 	
 	@Test
-	public void Mave() throws InterruptedException {
+	public void MavenReview() throws InterruptedException {
 		
 		System.setProperty("webdriver.chrome.driver", "//Users//bakhtiyoriloikzoda//Desktop//SELENIUM//chromedriver");
 		
@@ -19,26 +21,43 @@ public class MaveTest {
 		
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 		
-		driver.findElement(By.id("autosuggest")).sendKeys("Ta");
+		Thread.sleep(4000);
+		
+		driver.manage().window().maximize();
+		
+		Thread.sleep(3000);
+		
+		driver.findElement(By.id("autosuggest")).sendKeys("Ar");
+		
+		Thread.sleep(3000);
+		
 		
 		List<WebElement> options = driver.findElements(By.cssSelector("li[class='ui-menu-item'] a"));
 		
-		for(WebElement option : options) { 
+		for(WebElement option : options)
+		                                  { 
 			
-			if(option.getText().equalsIgnoreCase("Tajikistan")) { 
+			if(option.getText().equalsIgnoreCase("Argentina")) { 
 				
 				option.click();
 				
-				break; 
+				break;  
 			}
 		}
 		
+		Thread.sleep(3000);
 		
-		Thread.sleep(7000); 
 		
 		driver.quit();
 		
-	}
+		
 
+		
+
+	}
+		
+		
+		
+	
 
 }
