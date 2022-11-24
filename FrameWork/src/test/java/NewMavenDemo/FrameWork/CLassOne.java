@@ -55,6 +55,11 @@ public class CLassOne {
 		
 
 	}
+	
+	@Test
+	 public void mavenMethodTwo() {
+ 	 System.out.println("Printing mavenMethodTwo ");
+ 	}
 		
 		
 		
